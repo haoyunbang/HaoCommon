@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:text="请查看日志输出"
         android:textColor="@color/font_black"
         android:textSize="@dimen/text_sizemid" />
 

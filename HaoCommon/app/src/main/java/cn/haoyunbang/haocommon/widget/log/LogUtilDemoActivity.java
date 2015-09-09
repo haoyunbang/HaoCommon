@@ -1,35 +1,85 @@
 package cn.haoyunbang.haocommon.widget.log;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import cn.haoyunbang.common.eventbus.HaoEvent;
 import cn.haoyunbang.common.ui.BaseActivity;
+import cn.haoyunbang.common.ui.BaseSwipeBackActivity;
+import cn.haoyunbang.common.ui.base.BaseAppCompatActivity;
 import cn.haoyunbang.common.widget.log.LogUtil;
 import cn.haoyunbang.haocommon.R;
 
 /**
  * Created by fangxiao on 15/9/7.
  */
-public class LogUtilDemoActivity extends BaseActivity {
-
-    @Bind(R.id.text1)
-    TextView text1;
-    @Bind(R.id.text2)
-    TextView text2;
-    @Bind(R.id.text3)
-    TextView text3;
+public class LogUtilDemoActivity extends BaseSwipeBackActivity {
+    @Override
+    protected boolean isApplyKitKatTranslucency() {
+        return true;
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.logutil_layout);
-        ButterKnife.bind(this);
+    protected void getBundleExtras(Bundle extras) {
+
+    }
+
+    @Override
+    protected int getContentViewLayoutID() {
+        return R.layout.logutil_layout;
+    }
+
+    @Override
+    protected void onEventComming(HaoEvent haoEvent) {
+
+    }
+
+    @Override
+    protected View getLoadingTargetView() {
+        return null;
+    }
+
+    @Override
+    protected void initViewsAndEvents() {
+
         init();
+
+
+    }
+
+    @Override
+    protected boolean isBindEventBusHere() {
+        return false;
+    }
+
+    @Override
+    protected boolean toggleOverridePendingTransition() {
+        return true;
+    }
+
+    @Override
+    protected TransitionMode getOverridePendingTransitionMode() {
+        return TransitionMode.RIGHT;
+    }
+
+    @Override
+    protected boolean isApplyStatusBarTranslucency() {
+        return true;
     }
 
 
+    //    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.logutil_layout);
+//        ButterKnife.bind(this);
+//        init();
+//    }
+//
+//
     private void init() {
 
         // string

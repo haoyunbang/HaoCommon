@@ -1,5 +1,6 @@
 package cn.haoyunbang.haocommon.widget.dialog;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -28,7 +29,7 @@ import cn.haoyunbang.haocommon.widget.dialog.util.ViewFindUtils;
 /**
  * Created by fangxiao on 15/9/7.
  */
-public class DialogDemoActivity extends BaseActivity implements ExpandableListView.OnChildClickListener {
+public class DialogDemoActivity extends Activity implements ExpandableListView.OnChildClickListener {
     private Context context = this;
     public static String[] groups = {"Default Inner Dialog", "Custom Dialog", "Default Inner Anim", "Custom Anim"};
     public static String[][] childs = {

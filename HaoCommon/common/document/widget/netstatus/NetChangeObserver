@@ -1,0 +1,3 @@
+用于监控网络连接状态的类
+监听连接和断开连接
+参考自https://github.com/SkillCollege/SimplifyReader

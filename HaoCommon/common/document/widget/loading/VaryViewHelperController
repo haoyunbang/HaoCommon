@@ -1,0 +1,5 @@
+用于控制loading显示的类
+
+提供显示加载中 ， 加载出空页面， 加载出错， 加载网络异常等几种情况
+
+参考自https://github.com/SkillCollege/SimplifyReader

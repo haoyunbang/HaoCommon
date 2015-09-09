@@ -1,4 +1,4 @@
-package cn.haoyunbang.haocommon.widget.dialog.edittext;
+package cn.haoyunbang.haocommon.widget.edittext;
 
 import android.app.Activity;
 import android.os.Bundle;

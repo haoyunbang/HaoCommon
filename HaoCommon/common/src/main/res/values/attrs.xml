@@ -27,4 +27,11 @@
     </declare-styleable>
 
     <attr name="SwipeBackLayoutStyle" format="reference"/>
+    <declare-styleable name="EditTextHint">
+        <attr name="edit_hint" format="string" />
+        <attr name="edit_textColor" format="color" />
+        <attr name="edit_textSize" format="dimension" />
+        <attr name="edit_background" format="reference" />
+        <attr name="edit_rightImage" format="reference" />
+    </declare-styleable>
 </resources>

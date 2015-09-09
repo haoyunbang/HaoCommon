@@ -1,4 +1,4 @@
-package cn.haoyunbang.common.edittext;
+package cn.haoyunbang.common.widget.edittext;
 
 import android.content.Context;
 import android.content.res.TypedArray;

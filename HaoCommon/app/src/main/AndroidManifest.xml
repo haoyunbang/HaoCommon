@@ -30,6 +30,12 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <activity
+            android:name=".widget.edittext.EdittextDemoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
             android:name=".view.ToggleButtonActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"

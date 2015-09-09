@@ -12,6 +12,7 @@ import cn.haoyunbang.haocommon.bean.HomeBean;
 import cn.haoyunbang.haocommon.feed.HomeFeed;
 import cn.haoyunbang.haocommon.view.ToggleButtonActivity;
 import cn.haoyunbang.haocommon.widget.dialog.DialogDemoActivity;
+import cn.haoyunbang.haocommon.widget.edittext.EdittextDemoActivity;
 import cn.haoyunbang.haocommon.widget.log.LogUtilDemoActivity;
 import cn.haoyunbang.haocommon.widget.progress.CirProBarActivity;
 
@@ -80,8 +81,17 @@ public class BaseApplication extends Application {
         childBean.className = "CirProBarActivity";
         childBean.clazz = CirProBarActivity.class;
         childBeans.add(childBean);
+
+
+        childBean = new HomeBean();
+        childBean.name = "edittext";
+        childBean.className = "EdittextDemoActivity";
+        childBean.clazz = EdittextDemoActivity.class;
+        childBeans.add(childBean);
+
         homeBean.child = childBeans;
         homeBeans.add(homeBean);
+
 
         homeFeed.data = homeBeans;
 

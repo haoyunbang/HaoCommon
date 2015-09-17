@@ -31,5 +31,5 @@
     <color name="font_peoplechat">#ffcd69</color>
     <color name="font_doctoranswer">#3ACDD4</color>
     <color name="font_daysymptom">#ffae90</color>
-
+    <color name="stay_color">#999999</color>
 </resources>

@@ -2,19 +2,23 @@ package cn.haoyunbang.haocommon;
 
 import android.app.Application;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.orhanobut.logger.LogLevel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.haoyunbang.common.widget.imageload.ImagePipelineConfigFactory;
 import cn.haoyunbang.common.widget.log.LogUtil;
 import cn.haoyunbang.haocommon.bean.HomeBean;
 import cn.haoyunbang.haocommon.feed.HomeFeed;
-import cn.haoyunbang.haocommon.view.ToggleButtonActivity;
+import cn.haoyunbang.haocommon.view.toggle.ToggleButtonActivity;
 import cn.haoyunbang.haocommon.widget.dialog.DialogDemoActivity;
+import cn.haoyunbang.haocommon.widget.imageload.FrescoDemoActivity;
 import cn.haoyunbang.haocommon.widget.log.LogUtilDemoActivity;
 import cn.haoyunbang.haocommon.widget.progress.CirProBarActivity;
-
+import cn.haoyunbang.haocommon.widget.qrcode.CaptureActivity;
+import cn.haoyunbang.haocommon.view.gif.GifDemoActivity;
 /**
  * Created by fangxiao on 15/9/7.
  */
@@ -28,6 +32,7 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Fresco.initialize(this, ImagePipelineConfigFactory.getImagePipelineConfig(this));
         LogUtil.init()               // default PRETTYLOGGER or use just init()
                 //.setMethodCount(2);            // default 2
                 //.hideThreadInfo()             // default shown
@@ -52,11 +57,18 @@ public class BaseApplication extends Application {
         HomeBean homeBean = new HomeBean();
         HomeBean childBean = new HomeBean();
         homeBean.name = "view";
-        childBean.name = "ToggleButtonActivity";
+        childBean.name = "toggle";
         childBean.className = "ToggleButtonActivity";
         childBean.clazz = ToggleButtonActivity.class;
         childBeans = new ArrayList<>();
         childBeans.add(childBean);
+
+        childBean = new HomeBean();
+        childBean.name = "gif";
+        childBean.className = "GifDemoActivity";
+        childBean.clazz = GifDemoActivity.class;
+        childBeans.add(childBean);
+
         homeBean.child = childBeans;
         homeBeans.add(homeBean);
 
@@ -80,6 +92,19 @@ public class BaseApplication extends Application {
         childBean.className = "CirProBarActivity";
         childBean.clazz = CirProBarActivity.class;
         childBeans.add(childBean);
+
+        childBean = new HomeBean();
+        childBean.name = "二维码";
+        childBean.className = "CaptureActivity";
+        childBean.clazz = CaptureActivity.class;
+        childBeans.add(childBean);
+
+        childBean = new HomeBean();
+        childBean.name = "fresco图片加载";
+        childBean.className = "FrescoDemoActivity";
+        childBean.clazz = FrescoDemoActivity.class;
+        childBeans.add(childBean);
+
         homeBean.child = childBeans;
         homeBeans.add(homeBean);
 

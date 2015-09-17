@@ -6,21 +6,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.google.gson.Gson;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import cn.haoyunbang.common.eventbus.HaoEvent;
 import cn.haoyunbang.common.ui.BaseActivity;
 import cn.haoyunbang.haocommon.bean.HomeBean;
 import cn.haoyunbang.haocommon.feed.HomeFeed;
-import cn.haoyunbang.haocommon.view.ToggleButtonActivity;
-import cn.haoyunbang.haocommon.widget.dialog.DialogDemoActivity;
-import cn.haoyunbang.haocommon.widget.log.LogUtilDemoActivity;
-import cn.haoyunbang.haocommon.widget.progress.CirProBarActivity;
 
 /**
  * Created by fangxiao on 15/9/9.

@@ -1,4 +1,4 @@
-package cn.haoyunbang.haocommon;
+package cn.haoyunbang.haocommon.utils;
 
 import com.google.gson.Gson;
 

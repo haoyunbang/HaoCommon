@@ -74,5 +74,5 @@ public abstract class BaseActivity extends BaseAppCompatActivity implements Base
         toggleShowLoading(false, null);
     }
 
-    protected abstract boolean isApplyKitKatTranslucency();
+
 }

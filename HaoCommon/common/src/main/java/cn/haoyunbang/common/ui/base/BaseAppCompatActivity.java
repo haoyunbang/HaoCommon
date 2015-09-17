@@ -93,6 +93,7 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
      */
     protected abstract TransitionMode getOverridePendingTransitionMode();
 
+    protected abstract boolean isApplyKitKatTranslucency();
     /**
      * is applyStatusBarTranslucency
      *

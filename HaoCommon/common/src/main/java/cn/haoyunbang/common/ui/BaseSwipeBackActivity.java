@@ -73,5 +73,4 @@ public abstract class BaseSwipeBackActivity extends BaseSwipeBackCompatActivity 
         toggleShowLoading(false, null);
     }
 
-    protected abstract boolean isApplyKitKatTranslucency();
 }

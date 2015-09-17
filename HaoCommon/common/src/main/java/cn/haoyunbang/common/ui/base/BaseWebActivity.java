@@ -118,4 +118,9 @@ public class BaseWebActivity extends BaseSwipeBackCompatActivity {
     protected boolean isApplyStatusBarTranslucency() {
         return true;
     }
+
+    @Override
+    protected boolean isApplyKitKatTranslucency() {
+        return true;
+    }
 }

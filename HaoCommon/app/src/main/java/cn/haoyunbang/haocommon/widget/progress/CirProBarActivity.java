@@ -44,6 +44,11 @@ public class CirProBarActivity extends BaseSwipeBackActivity {
     @Override
     protected void initViewsAndEvents() {
 
+
+
+
+
+
     }
 
     @Override

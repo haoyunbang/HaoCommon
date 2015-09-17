@@ -1,4 +1,4 @@
-package cn.haoyunbang.haocommon.view;
+package cn.haoyunbang.haocommon.view.toggle;
 
 import android.os.Bundle;
 import android.view.View;

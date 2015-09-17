@@ -15,6 +15,7 @@ import cn.haoyunbang.haocommon.feed.HomeFeed;
 import cn.haoyunbang.haocommon.view.toggle.ToggleButtonActivity;
 import cn.haoyunbang.haocommon.widget.dialog.DialogDemoActivity;
 import cn.haoyunbang.haocommon.widget.imageload.FrescoDemoActivity;
+import cn.haoyunbang.haocommon.widget.edittext.EdittextDemoActivity;
 import cn.haoyunbang.haocommon.widget.log.LogUtilDemoActivity;
 import cn.haoyunbang.haocommon.widget.progress.CirProBarActivity;
 import cn.haoyunbang.haocommon.widget.qrcode.CaptureActivity;
@@ -92,7 +93,7 @@ public class BaseApplication extends Application {
         childBean.className = "CirProBarActivity";
         childBean.clazz = CirProBarActivity.class;
         childBeans.add(childBean);
-
+        
         childBean = new HomeBean();
         childBean.name = "二维码";
         childBean.className = "CaptureActivity";
@@ -103,10 +104,17 @@ public class BaseApplication extends Application {
         childBean.name = "fresco图片加载";
         childBean.className = "FrescoDemoActivity";
         childBean.clazz = FrescoDemoActivity.class;
+        
+        childBean = new HomeBean();
+        childBean.name = "edittext";
+        childBean.className = "EdittextDemoActivity";
+        childBean.clazz = EdittextDemoActivity.class;
+
         childBeans.add(childBean);
 
         homeBean.child = childBeans;
         homeBeans.add(homeBean);
+
 
         homeFeed.data = homeBeans;
 

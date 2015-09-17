@@ -1,10 +1,10 @@
-package cn.haoyunbang.haocommon.widget.dialog.edittext;
+package cn.haoyunbang.haocommon.widget.edittext;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import cn.haoyunbang.common.edittext.EditTextLayout;
+import cn.haoyunbang.common.widget.edittext.EditTextLayout;
 import cn.haoyunbang.haocommon.R;
 
 /**

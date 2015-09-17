@@ -14,7 +14,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         app:edit_background="@color/font_white"
-        app:edit_textSize="6sp"
+        app:edit_textSize="10sp"
         app:edit_textColor="@color/font_black"
         app:edit_rightImage="@mipmap/ico_cha"
         app:edit_hint="请输入密码" />

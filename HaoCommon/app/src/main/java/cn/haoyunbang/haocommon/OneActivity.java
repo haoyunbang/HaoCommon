@@ -86,12 +86,12 @@ public class OneActivity extends BaseActivity {
 
     @Override
     protected boolean toggleOverridePendingTransition() {
-        return false;
+        return true;
     }
 
     @Override
     protected TransitionMode getOverridePendingTransitionMode() {
-        return null;
+        return TransitionMode.RIGHT_DEFAULT;
     }
 
     @Override

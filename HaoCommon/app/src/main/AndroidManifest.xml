@@ -50,7 +50,11 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-
+        <activity
+            android:name=".widget.keyboard.KeyboardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".view.toggle.ToggleButtonActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"

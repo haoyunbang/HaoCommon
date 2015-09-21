@@ -16,6 +16,7 @@ import cn.haoyunbang.haocommon.view.toggle.ToggleButtonActivity;
 import cn.haoyunbang.haocommon.widget.dialog.DialogDemoActivity;
 import cn.haoyunbang.haocommon.widget.imageload.FrescoDemoActivity;
 import cn.haoyunbang.haocommon.widget.edittext.EdittextDemoActivity;
+import cn.haoyunbang.haocommon.widget.keyboard.KeyboardActivity;
 import cn.haoyunbang.haocommon.widget.log.LogUtilDemoActivity;
 import cn.haoyunbang.haocommon.widget.progress.CirProBarActivity;
 import cn.haoyunbang.haocommon.widget.qrcode.CaptureActivity;
@@ -109,6 +110,12 @@ public class BaseApplication extends Application {
         childBean.name = "edittext";
         childBean.className = "EdittextDemoActivity";
         childBean.clazz = EdittextDemoActivity.class;
+
+        childBean = new HomeBean();
+        childBean.name = "keyboard";
+        childBean.className = "KeyboardActivity";
+        childBean.clazz = KeyboardActivity.class;
+
 
         childBeans.add(childBean);
 

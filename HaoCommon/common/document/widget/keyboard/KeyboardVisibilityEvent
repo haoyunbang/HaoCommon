@@ -1,0 +1,7 @@
+用于监听软件盘的弹出隐藏
+
+keyboardutil 软键盘工具类，用于考那个值键盘的现实和隐藏
+
+
+参考自 https://github.com/yshrsmz/KeyboardVisibilityEvent
+

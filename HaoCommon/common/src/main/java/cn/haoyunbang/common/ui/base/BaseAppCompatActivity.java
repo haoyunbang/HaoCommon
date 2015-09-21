@@ -49,7 +49,7 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
      * 入场动画类型
      */
     public enum TransitionMode {
-        LEFT, RIGHT, TOP, BOTTOM, SCALE, FADE
+        LEFT, RIGHT, TOP, BOTTOM, SCALE, FADE, RIGHT_DEFAULT
     }
 
 
@@ -94,6 +94,7 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
     protected abstract TransitionMode getOverridePendingTransitionMode();
 
     protected abstract boolean isApplyKitKatTranslucency();
+
     /**
      * is applyStatusBarTranslucency
      *
@@ -122,6 +123,10 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
                     break;
                 case FADE:
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                    break;
+                case RIGHT_DEFAULT:
+                    overridePendingTransition(R.anim.push_left_in,
+                            R.anim.push_left_out);
                     break;
             }
         }
@@ -191,6 +196,10 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
                     break;
                 case FADE:
                     overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                    break;
+                case RIGHT_DEFAULT:
+                    overridePendingTransition(R.anim.push_right_in,
+                            R.anim.push_right_out);
                     break;
             }
         }
